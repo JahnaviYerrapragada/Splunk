@@ -347,7 +347,7 @@
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
                 "TemplateURL": {
-                    "Fn::Sub": "https://s3-us-west-2.amazonaws.com/klarna.splunk.test/aws-vpc.template"
+                    "Fn::Sub": "https://github.com/JahnaviYerrapragada/Splunk/blob/master/aws-vpc.template"
                 },
                 "Parameters": {
                     "AvailabilityZones": {
@@ -386,7 +386,7 @@
             "DependsOn": "VPCStack",
             "Properties": {
                 "TemplateURL": {
-                    "Fn::Sub": "https://s3-us-west-2.amazonaws.com/klarna.splunk.test/splunk-enterprise.template"
+                    "Fn::Sub": "https://github.com/JahnaviYerrapragada/Splunk/blob/master/splunk-enterprise.template"
                 },
                 "Parameters": {
                     "VPCID": {
