@@ -347,7 +347,7 @@
             "Type": "AWS::CloudFormation::Stack",
             "Properties": {
                 "TemplateURL": {
-                    "Fn::Sub": "/aws-vpc.template"
+                    "Fn::Sub": "https://s3-us-west-2.amazonaws.com/splunkuser-bucket/aws-vpc.template"
                 },
                 "Parameters": {
                     "AvailabilityZones": {
@@ -386,7 +386,7 @@
             "DependsOn": "VPCStack",
             "Properties": {
                 "TemplateURL": {
-                    "Fn::Sub": "/splunk-enterprise.template"
+                    "Fn::Sub": "https://s3-us-west-2.amazonaws.com/splunkuser-bucket/splunk-enterprise.template"
                 },
                 "Parameters": {
                     "VPCID": {
